@@ -41,6 +41,8 @@
                                       :dependencies [[http-kit "2.5.0"]]}
              :feature/httpkit-server {:source-paths ["feature-httpkit-server"]
                                       :dependencies [[http-kit "2.5.0"]]}
+             :feature/postal {:source-paths ["feature-postal"]
+                              :dependencies [[com.draines/postal "2.0.3"]]}
              :test [:feature/xml
                     :feature/yaml
                     :feature/postgresql
@@ -51,6 +53,7 @@
                     :feature/datascript
                     :feature/httpkit-client
                     :feature/httpkit-server
+                    :feature/postal
                     {:dependencies [[clj-commons/conch "0.9.2"]
                                     [com.clojure-goes-fast/clj-async-profiler "0.4.1"]
                                     [com.opentable.components/otj-pg-embedded "0.13.3"]]}]
