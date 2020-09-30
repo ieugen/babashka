@@ -42,7 +42,8 @@
              :feature/httpkit-server {:source-paths ["feature-httpkit-server"]
                                       :dependencies [[http-kit "2.5.0"]]}
              :feature/postal {:source-paths ["feature-postal"]
-                              :dependencies [[com.draines/postal "2.0.3"]]}
+                              :dependencies [[com.draines/postal "2.0.3"]
+                                             [javax.activation/javax.activation-api "1.2.0"]]}
              :test [:feature/xml
                     :feature/yaml
                     :feature/postgresql
