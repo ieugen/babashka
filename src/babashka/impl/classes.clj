@@ -167,6 +167,7 @@
                 java.nio.file.attribute.PosixFilePermissions])
           java.security.MessageDigest
           java.security.DigestInputStream
+          java.security.SecureRandom
           ~@(when features/java-time?
               `[java.time.format.DateTimeFormatter
                 java.time.Clock
