@@ -209,6 +209,7 @@
           java.util.jar.JarEntry
           java.util.jar.JarFile$JarFileEntry
           java.util.stream.Stream
+          java.util.Arrays
           java.util.Random
           ;; java.util.regex.Matcher
           java.util.regex.Pattern
