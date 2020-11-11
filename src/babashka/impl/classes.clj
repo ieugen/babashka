@@ -8,6 +8,8 @@
   (cond->
       `{clojure.lang.LineNumberingPushbackReader {:allPublicConstructors true
                                                   :allPublicMethods true}
+        java.io.PrintStream
+        {:methods [{:name "println"}]}
         java.lang.Thread
         {:allPublicConstructors true
          ;; generated with `public-declared-method-names`, see in
@@ -97,7 +99,6 @@
           java.io.OutputStream
           java.io.FileReader
           java.io.InputStreamReader
-          java.io.PrintStream
           java.io.PushbackInputStream
           java.io.Reader
           java.io.SequenceInputStream

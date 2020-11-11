@@ -11,7 +11,7 @@
         org.clojure/tools.reader {:mvn/version "1.3.3"},
         borkdude/edamame {:mvn/version "0.0.11-alpha.15"},
         borkdude/graal.locking {:mvn/version "0.0.2"},
-        borkdude/sci.impl.reflector {:mvn/version "0.0.1"}
+        borkdude/sci.impl.reflector {:mvn/version "0.0.1-java11"}
         org.clojure/core.async {:mvn/version "1.3.610"},
         org.clojure/tools.cli {:mvn/version "1.0.194"},
         org.clojure/data.csv {:mvn/version "1.0.0"},
