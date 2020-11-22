@@ -57,7 +57,7 @@
                   (let [v (parser/parse-next sci-ctx in)]
                     (if (or (identical? :repl/quit v)
                             (identical? :repl/exit v)
-                            (identical? :edamame.impl.parser/eof v))
+                            (identical? :edamame.core/eof v))
                       request-exit
                       v))))
       :eval (or eval
