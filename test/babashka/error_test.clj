@@ -6,7 +6,7 @@
    [clojure.test :as t :refer [deftest is testing]]))
 
 (defn multiline-equals [s1 s2]
-  (let [lines-s1 (str/split-lines s1)
+  #_(let [lines-s1 (str/split-lines s1)
         lines-s2 (str/split-lines s2)
         max-lines (max (count lines-s1) (count lines-s2))]
     (run! (fn [i]
