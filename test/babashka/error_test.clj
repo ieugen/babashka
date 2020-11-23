@@ -167,5 +167,6 @@ Location: <expr>:1:15
 clojure.core/subs - <built-in>
 user/quux         - <expr>:1:15
 user/quux         - <expr>:1:1
+user/bar          - <expr>:1:82
 user/bar          - <expr>:1:69
 user              - <expr>:1:91"))))
