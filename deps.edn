@@ -32,7 +32,7 @@
            {:main-opts ["-m" "babashka.main"]}
            :profile
            {:extra-deps
-            {com.clojure-goes-fast/clj-async-profiler {:mvn/version "0.4.1"}}
+            {com.clojure-goes-fast/clj-async-profiler {:mvn/version "0.5.0"}}
             :extra-paths ["test"]
             :jvm-opts ["-Djdk.attach.allowAttachSelf"]
             :main-opts ["-m" "babashka.profile"]}

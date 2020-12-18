@@ -3,10 +3,12 @@
 
 (comment)
 
-;; clojure -A:profile -e "(prn (loop [val 0 cnt 1000000] (if (pos? cnt) (recur (inc val) (dec cnt)) val)))"
+;; clojure -J-XX:+UnlockDiagnosticVMOptions -J-XX:+DebugNonSafepoints -J-D-Djdk.attach.allowAttachSelf -J-Dclojure.compiler.direct-linking=true -M:profile tmp/meander.clj
 
 (require '[clj-async-profiler.core :as prof])
 
 (defn -main [& options]
-  (prof/profile (apply main/main options))
+  (future (apply main/main options))
+  (Thread/sleep 2000)
+  (prn (prof/profile-for 10))
   (shutdown-agents))
